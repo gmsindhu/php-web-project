@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Courgette+Script" rel="stylesheet">
+<style type="text/css">
+ 
+</style>
+
+</head>
+<body>
+
+ <!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=number],input[type=date] {
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus,input[type=radio]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.gender{
+
+margin-right: 0;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 14%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+
+body {
+    background-image: url("img2.jpg");
+
+
+ 
+}
+.top-left{
+  position: absolute;
+    top: 58px;
+    left: 16px;
+ 
+
+}
+
+.box {
+    border-radius: 2px;
+	border-color:black;
+    background-color: transparent;
+    padding: 10px;
+    margin-right: 21%;
+    margin-left: 21%;
+    margin-top: 6%;
+}
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<div class="topnav">
+  <a  href="nav.html">HOME</a>
+  
+  <a href="display.html">BLOGS</a>
+  <a href="event.html">EVENTS</a>
+  <a href="faq.html">FAQs</a>
+</div>
+
+<div class="top-left" style="font-weight: bold; font-family: georgia;font-size: 24px; margin-left:40%;">BOOK YOUR SLOTS</div>
+
+
+<div class="box" style="font-family:'Çourgette'";>
+ <form action="bookapp.php" method="POST" align="center" style="border:3px solid black">
+ <br>
+<div>  
+   <label for="name"><b>Name</b></label>
+   <br>
+   <input type="text" placeholder="Enter name" name="name" required>
+</div>
+<div>
+  <label for="email"><b>Email</b></label>
+  <br>
+  <input type="text" placeholder="Enter email" name="email" required>
+</div>
+<div>
+  <label for="phone"><b>Phone</b></label>
+  <br>
+  <input type="number" placeholder="Enter number" name="phone" required>
+</div>
+<div class="gender">
+<br>
+  <label for="gender"><b>Preferred gender of the counselor :</b></label>
+  <input type="radio" name="gender" value="m" required>M
+  <input type="radio" name="gender" value="f" required>F 
+</div>
+<div>
+<br>
+  <label for="type"><b>Type of counseling :</b></label>
+  <input type="radio" name="type" value="onph" required>On phone
+  <input type="radio" name="type" value="ff" required>Face to Face
+</div>	
+
+<br>
+
+<div>
+  <label for="date"><b>Date</b></label>
+  <br>
+  <input type="date" placeholder="Enter Post date" name="date" required>
+</div>
+	
+<div class="gender">
+<br>
+  <label for="time"><b>Slot :</b></label>
+  <input type="radio" name="time" value="m" required>11.00AM
+  <input type="radio" name="time" value="f" required>3.00PM
+  <input type="radio" name="time" value="o" required>6.00PM
+</div>
+<br>
+<br>
+<div class="clearfix">
+  <input type="reset" class="cancelbtn"></input>
+  <button type="submit" class="signupbtn">Book</button>
+</div>
+</form>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Courgette+script" rel="stylesheet">
+<head>
+  <style>
+body {font-family: 'Courgette';}
+form {border: 1px solid black;}
+
+input[type=text], input[type=password], input[type=email], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+	
+}
+
+.container {
+    padding: 16px;
+    }
+body {
+    background-image: url("img2.jpg");
+}
+</style>
+<style>
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="nav.html">HOME</a>
+  <a href="event.html">EVENTS</a>
+  <a class="active" href="display.html">BLOGS</a>
+  <a href="faq.html">FAQs</a>
+</div>
+ <h2 style=" margin-left:40%" >Create your own blogs</h2>
+
+ <form action="bloginsert.php" method="POST" style=" margin-left:400px ; margin-right:500px;width:40%; border:3px solid black;">
+   <div class="container" style="width:80%;">
+    <label for="uname"><b>Title</b></label>
+    <input type="text" placeholder="Enter title" name="post_title" required>
+    <label for="content"><b>Content</b></label>
+	<textarea name="content" style=" width:100%; height:150px; border: 1px solid black;" placeholder="Enter content here"> </textarea>
+	<label for="author name"><b>Author Name</b></label>
+    <input type="text" placeholder="Enter author name" name="author_name" required>
+	
+	<label for="date"><b>Date</b></label>
+    <input type="date" placeholder="Enter Post date" name="post_date" required>
+	
+    <input type="submit" value="Continue to Post Blog" class="btn">
+      </form>
+
+</body>
+</html>
+
